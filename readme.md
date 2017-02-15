@@ -1,7 +1,6 @@
 # WM Tooltip
 
-Small ckeditor plugin for Drupal 8 that will add widget button to
-create and manage tooltips in HTML wysiwygs.
+Small CKEditor plugin for Drupal 8 that will add widget button to create and manage tooltips in HTML.
 
 ## Caveat
 
