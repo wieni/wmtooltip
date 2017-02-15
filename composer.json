@@ -1,0 +1,15 @@
+
+{
+    "name": "wieni/wmtooltip",
+    "description": "Small CKEditor plugin for Drupal 8 that will add a widget button to create and manage tooltips in HTML.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wieni",
+            "email": "info@wieni.be"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "type": "drupal-module"
+}
