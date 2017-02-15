@@ -1,0 +1,9 @@
+.js-tooltip {
+    font-weight: 900;
+}
+
+.js-tooltip::after {
+    content: ' (?)';
+    display: inline;
+    font-weight: 800;
+}
