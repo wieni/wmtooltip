@@ -3,7 +3,7 @@
 }
 
 .js-tooltip::after {
-    content: ' (?)';
+    content: " (?)";
     display: inline;
     font-weight: 800;
 }

@@ -1,8 +1,8 @@
 <?php
 /**
-* @file
-* Definition of \Drupal\wmtooltip\Plugin\CKEditorPlugin\Tooltip.
-*/
+ * @file
+ * Definition of \Drupal\wmtooltip\Plugin\CKEditorPlugin\Tooltip.
+ */
 
 namespace Drupal\wmtooltip\Plugin\CKEditorPlugin;
 
@@ -17,13 +17,15 @@ use Drupal\editor\Entity\Editor;
  *   label = @Translation("Tooltip")
  * )
  */
-class Tooltip extends CKEditorPluginBase {
+class Tooltip extends CKEditorPluginBase
+{
 
     /**
      * Implements \Drupal\ckeditor\Plugin\CKEditorPluginInterface::isInternal().
      */
-    public function isInternal() {
-        return FALSE;
+    public function isInternal()
+    {
+        return false;
     }
 
     /**
@@ -55,9 +57,9 @@ class Tooltip extends CKEditorPluginBase {
     public function getButtons()
     {
         return [
-          'tooltip' => [
-            'label' => t('Tooltip'),
-            'image' => drupal_get_path('module', 'wmtooltip') . '/icons/tooltip.png'
+          "tooltip" => [
+            "label" => t("Tooltip"),
+            "image" => drupal_get_path("module", "wmtooltip") . "/icons/tooltip.png"
           ]
         ];
     }
@@ -73,20 +75,20 @@ class Tooltip extends CKEditorPluginBase {
      */
     public function getFile()
     {
-        return drupal_get_path('module', 'wmtooltip') . '/tooltip.plugin.js';
+        return drupal_get_path("module", "wmtooltip") . "/tooltip.plugin.js";
     }
 
     /**
      * Returns the additions to CKEDITOR.config for a specific CKEditor instance.
      *
-     * The editor's settings can be retrieved via $editor->getSettings(), but be
+     * The editor"s settings can be retrieved via $editor->getSettings(), but be
      * aware that it may not yet contain plugin-specific settings, because the
      * user may not yet have configured the form.
      * If there are plugin-specific settings (verify with isset()), they can be
      * found at
      * @code
      * $settings = $editor->getSettings();
-     * $plugin_specific_settings = $settings['plugins'][$plugin_id];
+     * $plugin_specific_settings = $settings["plugins"][$plugin_id];
      * @endcode
      *
      * @param \Drupal\editor\Entity\Editor $editor
